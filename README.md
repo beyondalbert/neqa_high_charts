@@ -1,12 +1,12 @@
 # NeqaHighCharts
 
-TODO: Write a gem description
+help generate high charts in rails!
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'neqa_high_charts'
+    gem 'neqa_high_charts', :git => 'git@github.com:beyondalbert/neqa_high_charts.git'
 
 And then execute:
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+see usage demo: https://github.com/beyondalbert/rails-high-charts-demo
+
+## How this gem works
+
+Deal the high charts options as the Class NeqaHighCharts::HighChart's attributes, so we can set them in your ruby code!
+
+Then use view helper to change this attributes to html and js code! 
 
 ## Contributing
 
