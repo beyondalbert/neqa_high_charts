@@ -51,7 +51,7 @@ module NeqaHighCharts
         %|{ #{generate_json_from_hash value} }|
       elsif value.is_a? Array
         %|[ #{generate_json_from_array value} ]|
-      elsif value.is_a?(String) && (value.include?('function()') || value.include?('Highcharts.'))
+      elsif value.is_a?(String) && (value.include?('function(') || value.include?('Highcharts.'))
         value
       else
         value.to_json
