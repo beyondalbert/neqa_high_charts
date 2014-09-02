@@ -1,6 +1,6 @@
 module NeqaHighCharts
   class HighChart
-  	attr_accessor :chart, :title, :subtitle, :xAxis, :yAxis, :tooltip, :legend, :labels, :plotOptions, :series, :scrollbar, :credits
+  	attr_accessor :chart, :title, :subtitle, :xAxis, :yAxis, :tooltip, :legend, :labels, :plotOptions, :series, :scrollbar, :credits, :colors
 
   	def initialize
   	  self.tap do |high_chart|
