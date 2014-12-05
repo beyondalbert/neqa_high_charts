@@ -1,23 +1,35 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'neqa_high_charts/version'
+# -*- encoding: utf-8 -*-
+# stub: neqa_high_charts 0.0.1 ruby lib
 
-Gem::Specification.new do |spec|
-  spec.name          = "neqa_high_charts"
-  spec.version       = NeqaHighCharts::VERSION
-  spec.authors       = ["beyondalbert"]
-  spec.email         = ["beyondalbert@gmail.com"]
-  spec.description   = %q{easy high chart generate gem}
-  spec.summary       = %q{easy high chart generate gem}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+Gem::Specification.new do |s|
+  s.name = "neqa_high_charts"
+  s.version = "0.0.1"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
+  s.authors = ["beyondalbert"]
+  s.date = "2014-12-03"
+  s.description = "easy high chart generate gem"
+  s.email = ["beyondalbert@gmail.com"]
+  s.files = [".gitignore", "Gemfile", "LICENSE.txt", "README.md", "Rakefile", "lib/neqa_high_charts.rb", "lib/neqa_high_charts/engine.rb", "lib/neqa_high_charts/high_chart.rb", "lib/neqa_high_charts/railtie.rb", "lib/neqa_high_charts/version.rb", "lib/neqa_high_charts/views_helper.rb", "neqa_high_charts.gemspec"]
+  s.homepage = ""
+  s.licenses = ["MIT"]
+  s.rubygems_version = "2.2.2"
+  s.summary = "easy high chart generate gem"
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  if s.respond_to? :specification_version then
+    s.specification_version = 4
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_development_dependency(%q<bundler>, ["~> 1.3"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+    else
+      s.add_dependency(%q<bundler>, ["~> 1.3"])
+      s.add_dependency(%q<rake>, [">= 0"])
+    end
+  else
+    s.add_dependency(%q<bundler>, ["~> 1.3"])
+    s.add_dependency(%q<rake>, [">= 0"])
+  end
+  s.add_development_dependency "rspec"
 end
