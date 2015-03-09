@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/beyondalbert/neqa_high_charts.svg)](https://travis-ci.org/beyondalbert/neqa_high_charts)
+
 # NeqaHighCharts
 
 help generate high charts in rails!

@@ -1,4 +1,4 @@
-module LazyHighCharts
+module NeqaHighCharts
   module Rails
     class Engine < ::Rails::Engine
     end

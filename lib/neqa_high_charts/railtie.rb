@@ -1,5 +1,5 @@
 # encoding: UTF-8
-module LazyHighCharts
+module NeqaHighCharts
   class Railtie < ::Rails::Railtie
     config.before_configuration do
       if config.action_view.javascript_expansions
